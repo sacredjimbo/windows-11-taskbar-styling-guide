@@ -1,17 +1,8 @@
-# WindowGlass theme for Windows 11 Taskbar Styler
+# WindowGlass-alternative theme for Windows 11 Taskbar Styler
 
-A theme that adds a modern, glassy aesthetic with a compact, floating layout to the Windows 11 taskbar.
+A little change to WindowGlass original taskbar for those who wants a taskbar without the start menu and concise design
 
-**Author**: [Nathaniel4JC](https://github.com/Nathaniel4JC)
-
-## Left Aligned
-![Left](TB_Left.png)
-
-## Center Aligned
-![Center](screenshot.png)
-
-## Note
-In order to make the taskbar look better, it's best that you install the 'Taskbar height and icon size' mod and use the following settings for the mod:
+Credit to the original author -> [Nathaniel4JC](https://github.com/Nathaniel4JC)
 
 <details>
 <summary>Click to expand JSON content</summary>
@@ -76,10 +67,9 @@ The theme styles can also be imported manually. To do that, follow these steps:
 ```json
 {
   "controlStyles[0].target": "Taskbar.TaskbarFrame#TaskbarFrame",
-  "controlStyles[0].styles[1]": "HorizontalAlignment=Auto",
-  "controlStyles[0].styles[2]": "Width=Auto",
-  "controlStyles[0].styles[0]": "MaxWidth:=900",
-  "controlStyles[0].styles[3]": "MinWidth:=500",
+  "controlStyles[0].styles[0]": "Width=Auto",
+  "controlStyles[0].styles[1]": "HorizontalAlignment=Center",
+  "controlStyles[0].styles[2]": "Margin=250,0,250,0",
   "controlStyles[1].target": "Taskbar.TaskbarFrame#TaskbarFrame > Grid#RootGrid",
   "controlStyles[1].styles[0]": "Margin=30,0,30,5",
   "controlStyles[1].styles[1]": "BorderThickness=$BorderThickness",
@@ -96,11 +86,10 @@ The theme styles can also be imported manually. To do that, follow these steps:
   "controlStyles[4].styles[1]": "Background:=$ElementBG",
   "controlStyles[4].styles[2]": "CornerRadius=12",
   "controlStyles[5].target": "Grid#SystemTrayFrameGrid",
-  "controlStyles[5].styles[0]": "Margin=0,7,20,7",
-  "controlStyles[5].styles[1]": "RenderTransform:=<TranslateTransform X=\"-105\" Y=\"-2\"/>",
-  "controlStyles[5].styles[2]": "Padding=0",
-  "controlStyles[5].styles[3]": "Background:=$ElementBG",
-  "controlStyles[5].styles[4]": "CornerRadius=12",
+  "controlStyles[5].styles[0]": "Margin=20,7,20,7",
+  "controlStyles[5].styles[1]": "Padding=4",
+  "controlStyles[5].styles[2]": "Background:=$ElementBG",
+  "controlStyles[5].styles[3]": "CornerRadius=12",
   "controlStyles[6].target": "SystemTray.ChevronIconView",
   "controlStyles[6].styles[0]": "Padding=$TrayPadding",
   "controlStyles[6].styles[1]": "CornerRadius=10",
@@ -151,7 +140,7 @@ The theme styles can also be imported manually. To do that, follow these steps:
   "controlStyles[21].target": "TextBlock#SearchBoxTextBlock",
   "controlStyles[21].styles[0]": "Text=Search This Precision",
   "controlStyles[21].styles[1]": "FontSize=10",
-  "controlStyles[21].styles[2]": "FontFamily=vivo Sans EN VF",
+  "controlStyles[21].styles[2]": "FontFamily=SF Pro Text",
   "controlStyles[22].target": "SystemTray.OmniButton#NotificationCenterButton > Grid > ContentPresenter > ItemsPresenter > StackPanel > ContentPresenter > SystemTray.IconView#SystemTrayIcon > Grid > Grid > SystemTray.TextIconContent",
   "controlStyles[22].styles[0]": "Visibility=Collapsed",
   "controlStyles[23].target": "Windows.UI.Xaml.Controls.Button",
@@ -217,6 +206,10 @@ The theme styles can also be imported manually. To do that, follow these steps:
   "controlStyles[39].styles[1]": "BorderBrush:=$BorderBrush",
   "controlStyles[39].styles[2]": "BorderThickness=$BorderThickness",
   "controlStyles[39].styles[3]": "CornerRadius=$CornerRadius",
+  "controlStyles[40].target": "Taskbar.ExperienceToggleButton#LaunchListButton[AutomationProperties.AutomationId=StartButton]",
+  "controlStyles[40].styles[0]": "Visibility=Collapsed",
+  "controlStyles[41].target": "SystemTray.Stack#ShowDesktopStack",
+  "controlStyles[41].styles[0]": "Visibility=Collapsed",
   "styleConstants[0]": "Background=<WindhawkBlur BlurAmount=\"15\" TintColor=\"#10808080\"/>",
   "styleConstants[1]": "BorderBrush2=<LinearGradientBrush StartPoint=\"0,0\" EndPoint=\"0,1\"><GradientStop Color=\"{ThemeResource SystemChromeHighColor}\" Offset=\"0.0\" /><GradientStop Color=\"{ThemeResource SystemChromeLowColor}\" Offset=\"0.25\" /><GradientStop Color=\"{ThemeResource SystemChromeHighColor}\" Offset=\"1\" /></LinearGradientBrush>",
   "styleConstants[2]": "BorderThickness=0.3,1,0.3,0.3",
@@ -224,7 +217,7 @@ The theme styles can also be imported manually. To do that, follow these steps:
   "styleConstants[4]": "BorderBrush=<LinearGradientBrush StartPoint=\"0,0\" EndPoint=\"0,1\"><GradientStop Color=\"#50808080\" Offset=\"0.0\" /><GradientStop Color=\"#50404040\" Offset=\"0.25\" /><GradientStop Color=\"#50808080\" Offset=\"1\" /></LinearGradientBrush>",
   "styleConstants[5]": "Background2=<AcrylicBrush TintColor=\"{ThemeResource SystemChromeAltHighColor}\" TintOpacity=\"0.3\" FallbackColor=\"{ThemeResource SystemChromeAltHighColor}\" />",
   "styleConstants[6]": "TrayPadding=2",
-  "styleConstants[7]": "ElementBG=<SolidColorBrush Color=\"{ThemeResource SystemChromeAltHighColor}\" Opacity=\"0.3\" />",
+  "styleConstants[7]": "ElementBG=<WindhawkBlur BlurAmount=\"15\" TintColor=\"#10808080\"/>",
   "styleConstants[8]": "ElementBorderThickness=0.3,0.3,0.3,1",
   "styleConstants[9]": "ElementBorderBrush=<LinearGradientBrush StartPoint=\"0,0\" EndPoint=\"0,1\"><GradientStop Color=\"#50808080\" Offset=\"1\" /><GradientStop Color=\"#50606060\" Offset=\"0.15\" /></LinearGradientBrush>",
   "styleConstants[10]": "ElementCornerRadius=12"
