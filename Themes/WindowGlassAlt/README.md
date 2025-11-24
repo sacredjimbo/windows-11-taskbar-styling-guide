@@ -44,15 +44,6 @@ This theme also styles additional parts of Windows 11, including:
 
 ---
 
-## Theme selection
-
-The theme is integrated into the mod and can simply be selected from the mod's
-settings:
-
-* Open the Windows 11 Taskbar Styler mod in Windhawk.
-* Go to the "Settings" tab.
-* Select the theme and save the settings.
-
 ## Manual installation
 
 The theme styles can also be imported manually. To do that, follow these steps:
